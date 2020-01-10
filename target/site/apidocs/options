@@ -1,0 +1,24 @@
+-classpath
+'/home/konrad/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/konrad/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/konrad/workspace/serveletjee/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2020. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/konrad/workspace/serveletjee/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'serveletjee 1.0-SNAPSHOT API'
+-linkoffline
+'http://docs.oracle.com/javase/8/docs/api' '/home/konrad/workspace/serveletjee/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'serveletjee 1.0-SNAPSHOT API'
