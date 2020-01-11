@@ -18,28 +18,35 @@ public class Servlet241 extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String products[] = {
-                "Asus Transformr;2999.99",
-                "iPhone 6';3499.18",
-                "Converse Sneakers;125.00",
-                "LG OLED55B6P OLED TV;6493.91",
-                "Samsung HT-J4100;800.99",
-                "Alpine Swiss Dress Belt;99.08",
-                "60 Watt LED;1.50",
-                "Arduino Nano;3.26",
-        };
 
-    String productId = request.getParameter("productId");
+        for(int i = 0; i < 8; i++){
+            response.getWriter().append("<a href=\"servlet242?productId="+i+"\">Servlet242- "+i+"</a>");
+            response.getWriter().append("\n");
+        }
 
-        if(productId == null){
-            response.getWriter().append("product not found");
-        }
-        else if(Integer.parseInt(productId) <= 7 && Integer.parseInt(productId) >= 0){
-            response.getWriter().append(products[Integer.parseInt(productId)]);
-        }
-        else{
-            response.getWriter().append("product not found");
-        }
+
+//        String products[] = {
+//                "Asus Transformr;2999.99",
+//                "iPhone 6';3499.18",
+//                "Converse Sneakers;125.00",
+//                "LG OLED55B6P OLED TV;6493.91",
+//                "Samsung HT-J4100;800.99",
+//                "Alpine Swiss Dress Belt;99.08",
+//                "60 Watt LED;1.50",
+//                "Arduino Nano;3.26",
+//        };
+//
+//    String productId = request.getParameter("productId");
+//
+//        if(productId == null){
+//            response.getWriter().append("product not found");
+//        }
+//        else if(Integer.parseInt(productId) <= 7 && Integer.parseInt(productId) >= 0){
+//            response.getWriter().append(products[Integer.parseInt(productId)]);
+//        }
+//        else{
+//            response.getWriter().append("product not found");
+//        }
 
     }
 
